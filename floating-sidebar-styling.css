@@ -1,3 +1,12 @@
+/*==============================
+ * 
+ * This is the stylesheet for Floating Sidebar plugin v2.2.1
+ * By  Mohamed Bahrawy 
+ * You can modify Some CSS values here like Colors, Fonts, Font weights 
+ * Be careful not to modify other Important values that may cause plugin failure 
+ * 
+ * =============================*/
+
 body.has-floating-sidebar,
 
 html {
@@ -831,3 +840,15 @@ body:not(.has-floating-sidebar) .x-section .x-container.marginless-columns>.x-co
   }
 
 }
+
+/* Fixing horizontal scrolling on comments section */
+
+@media (max-width: 480px){
+  .x-comment-content-wrap {
+          width: 94% !important;
+          margin: 0 4%;
+    }
+  }
+  body.has-floating-sidebar {
+      overflow-x: hidden !important;
+  }
