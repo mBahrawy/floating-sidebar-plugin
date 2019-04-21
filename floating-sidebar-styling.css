@@ -1,0 +1,833 @@
+body.has-floating-sidebar,
+
+html {
+
+  height: 100%;
+
+}
+
+
+
+body.has-floating-sidebar {
+
+  overflow: initial;
+
+}
+
+
+
+.x-navbar-warp {
+
+  position: fixed;
+
+  width: 100%;
+
+  z-index: 999999999;
+
+  top: -1px;
+
+}
+
+
+
+.entry-content,
+
+.entry-wrap {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+}
+
+
+
+#page-banner {
+
+  margin: 0 0 34px;
+
+  width: 100%;
+
+}
+
+
+
+#page-banner .x-container {
+
+  margin: 0;
+
+}
+
+
+
+body.has-floating-sidebar #cs-content {
+
+  overflow: hidden;
+
+  margin: 0;
+
+  flex-basis: 74.5%;
+
+  margin-left: 2%;
+
+}
+
+
+
+body.has-floating-sidebar #cs-content h2,
+
+body.has-floating-sidebar #cs-content h3 {
+
+  padding-top: 78px;
+
+  margin: -40px 0 0 !important;
+
+}
+
+
+
+.float-sidebar-container {
+
+  flex-basis: 23.5%;
+
+  position: relative;
+
+}
+
+
+
+.float-sidebar-container hr {
+
+  display: none !important;
+
+  height: 0 !important;
+
+}
+
+@media only screen and (min-width: 960px) {
+
+  .float-sidebar-container {
+
+    padding-left: 11px;
+
+  }
+
+}
+
+
+
+#float-sidebar {
+
+  position: sticky;
+
+  position: -webkit-sticky;
+
+  top: 70px;
+
+}
+
+
+
+.x-comments-area {
+
+  flex-basis: 100%;
+
+}
+
+
+
+.header-offset-to-scroll {
+
+  padding-top: 78px;
+
+  margin: -40px 0 0 !important;
+
+}
+
+@media only screen and (max-width: 959px) {
+
+  .header-offset-to-scroll {
+
+    padding-top: 113px;
+
+    margin: -67px 0 0 !important;
+
+  }
+
+}
+
+
+
+.float-sidebar-container #float-sidebar h4 {
+
+  color: #fff;
+
+  margin: 0;
+
+  padding: 4px 6px;
+
+  font-size: 16px;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f36b24+1,ff975e+100 */
+
+  background: #f36b24;
+
+  /* Old browsers */
+
+  background: -moz-linear-gradient(45deg, #f36b24 1%, #ffb186 100%);
+
+  /* FF3.6-15 */
+
+  background: -webkit-linear-gradient(45deg, #f36b24 1%, #ffb186 100%);
+
+  /* Chrome10-25,Safari5.1-6 */
+
+  background: linear-gradient(45deg, #f36b24 1%, #ffb186 100%);
+
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr= '#f36b24', endColorstr='#ffb186', GradientType=1);
+
+  /* IE6-9 fallback on horizontal gradient */
+
+  border-radius: 4px;
+
+  -moz-border-radius: 4px;
+
+  -webkit-border-radius: 4px;
+
+}
+
+
+
+.float-sidebar-container #float-sidebar ul {
+
+  margin: 5px 0 15px;
+
+  padding: 0;
+
+  list-style: none;
+
+}
+
+
+
+.float-sidebar-container #float-sidebar ul li {
+
+  margin: 0;
+
+  font-size: 14px;
+
+  padding: 2px 2px 1px 0;
+
+  color: #cacaca;
+
+}
+
+
+
+.float-sidebar-container #float-sidebar ul li:not(:last-child) {
+
+  border-bottom: solid 1px #e8e8e8;
+
+}
+
+
+
+.float-sidebar-container #float-sidebar ul li a {
+
+  color: #535353;
+
+}
+
+
+
+.float-sidebar-container #float-sidebar ul li a:hover {
+
+  color: #0089bd;
+
+}
+
+
+
+.float-sidebar-container #float-sidebar ul li.active a {
+
+  left: 13px;
+
+}
+
+
+
+/*
+
+  Scroll spy
+
+  =======================================
+
+  */
+
+
+
+#float-sidebar li.active a {
+
+  color: #b94200 !important;
+
+  left: 10px;
+
+ /* text-decoration: underline;*/
+
+}
+
+
+
+#float-sidebar li.active a::before {
+
+  content: '\00BB';
+
+  margin-right: 7px;
+
+  position: absolute;
+
+  font-size: 24px;
+
+  top: -16px;
+
+  left: -15px;
+
+}
+
+
+
+#float-sidebar li.active {
+
+  background-color: rgba(255, 235, 249, 0.48) !important;
+
+}
+
+
+
+#float-sidebar li a {
+
+  position: relative;
+
+  left: 0;
+
+}
+
+
+
+#float-sidebar li a,
+
+#float-sidebar li.active,
+
+#float-sidebar li.active a {
+
+  -webkit-transition: all .8s ease-out;
+
+  -moz-transition: all .8s ease-out;
+
+  -ms-transition: all .8s ease-out;
+
+  -o-transition: all .8s ease-out;
+
+  transition: all .2s ease-out;
+
+}
+
+@media only screen and (min-width: 960px) and (max-width: 979px) {
+
+  .x-navbar-fixed-top {
+
+    position: fixed;
+
+  }
+
+
+
+  .admin-bar .x-navbar-fixed-top {
+
+    top: 32px;
+
+  }
+
+}
+
+
+
+/*
+
+  Fixes
+
+  =======================================
+
+  */
+
+
+
+#page-banner .x-container.max.width {
+
+  margin: 0 auto;
+
+}
+
+
+
+.x-breadcrumb-wrap {
+
+  padding: 30px 0 0 !important;
+
+}
+
+@media only screen and (max-width: 959px) {
+
+  .x-breadcrumb-wrap {
+
+    position: relative;
+
+    left: 0;
+
+    margin-top: 48px !important;
+
+    padding-bottom: 0 !important;
+
+    text-align: center !important;
+
+  }
+
+
+
+  .x-breadcrumb-wrap .x-breadcrumbs {
+
+    width: 100%;
+
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  #wpadminbar {
+
+    display: none;
+
+  }
+
+}
+
+
+
+body.has-floating-sidebar.logged-in a#drag-btn {
+
+  top: 94px;
+
+}
+
+@media only screen and (max-width: 780px) {
+
+  body.has-floating-sidebar.logged-in a#drag-btn {
+
+    top: 108px;
+
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  body.has-floating-sidebar.logged-in a#drag-btn {
+
+    top: 62px;
+
+  }
+
+}
+
+@media only screen and (max-width: 959px) {
+
+  body.has-floating-sidebar.mobile-warp.logged-in .float-sidebar-container {
+
+    top: 78px;
+
+  }
+
+
+
+  body.has-floating-sidebar.logged-in #cs-content h2 {
+
+    padding-top: 108px;
+
+    margin: -58px 0 0 !important;
+
+  }
+
+}
+
+@media only screen and (max-width: 780px) {
+
+  body.has-floating-sidebar.mobile-warp.logged-in .float-sidebar-container {
+
+    top: 89px;
+
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  body.has-floating-sidebar.mobile-warp.logged-in .float-sidebar-container {
+
+    top: 42px;
+
+  }
+
+}
+
+
+
+body.has-floating-sidebar.logged-in #float-sidebar {
+
+  top: 113px;
+
+}
+
+@media only screen and (max-width: 959px) {
+
+  body.has-floating-sidebar.logged-in #float-sidebar {
+
+    top: 12px;
+
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  body.has-floating-sidebar.logged-in #float-sidebar {
+
+    top: 20px;
+
+  }
+
+}
+
+
+
+/*
+
+  For mobile
+
+  =======================================
+
+  */
+
+
+
+#drag-btn {
+
+  display: none;
+
+}
+
+@media only screen and (max-width: 959px) {
+
+  .float-sidebar-container {
+
+    position: fixed;
+
+    max-height: 100%;
+
+    z-index: 111112;
+
+    top: 63px;
+
+    left: -350px;
+
+    background-color: #fff;
+
+    padding: 20px 18px;
+
+    box-shadow: 10px 10px 15px 1px rgba(9, 9, 9, 0.25);
+
+    min-height: 1000000px;
+
+  }
+
+
+
+  .float-sidebar-container #float-sidebar {
+
+    top: 0;
+
+  }
+
+
+
+  #page-banner,
+
+  .cs-content {
+
+    flex-basis: 100% !important;
+
+    position: relative;
+
+    left: 0;
+
+  }
+
+
+
+  a#drag-btn {
+
+    top: 63px;
+
+    position: fixed;
+
+    z-index: 999;
+
+    left: 0;
+
+    text-align: center;
+
+    width: 100%;
+
+    background-color: #ffffff;
+
+    padding: 6px 14px;
+
+    font-size: 16px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    display: inline-block;
+
+    color: #353535 !important;
+
+    -webkit-box-shadow: 6px 4px 36px -12px rgba(0, 0, 0, 0.36);
+
+    -moz-box-shadow: 6px 4px 36px -12px rgba(0, 0, 0, 0.36);
+
+    box-shadow: 6px 4px 36px -12px rgba(0, 0, 0, 0.36);
+
+    border: none;
+
+    opacity: 1 !important;
+
+    border-bottom: 1px solid #ddd;
+
+  }
+
+
+
+  a#drag-btn img {
+
+    width: 12px;
+
+    position: relative;
+
+    top: -1px;
+
+    left: -5px;
+
+  }
+
+
+
+  #drag-btn img {
+
+    width: 14px;
+
+  }
+
+
+
+  #shiftnav-toggle-main {
+
+    border-bottom: 1px solid #d5d5d5;
+
+  }
+
+
+
+  body.has-floating-sidebar.mobile-warp .float-sidebar-container {
+
+    overflow-y: auto;
+
+    left: 0;
+
+    width: 260px;
+
+  }
+
+
+
+  .float-sidebar-container::-webkit-scrollbar {
+
+    display: none;
+
+  }
+
+
+
+  body.has-floating-sidebar.mobile-warp #page-banner,
+
+  body.has-floating-sidebar.mobile-warp .cs-content,
+
+  body.has-floating-sidebar.mobile-warp .x-breadcrumb-wrap {
+
+    left: 250px;
+
+  }
+
+
+
+  body.has-floating-sidebar.mobile-warp .black-overlay {
+
+    position: fixed;
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.16);
+
+    z-index: 11;
+
+  }
+
+
+
+  body.has-floating-sidebar.mobile-warp #drag-btn {
+
+    left: 140px;
+
+  }
+
+}
+
+
+
+#drag-btn,
+
+#page-banner,
+
+.black-overlay,
+
+.cs-content,
+
+.float-sidebar-container,
+
+.x-breadcrumb-wrap {
+
+  -webkit-transition: left .6s ease-out;
+
+  -moz-transition: left .6s ease-out;
+
+  -ms-transition: left .6s ease-out;
+
+  -o-transition: left .6s ease-out;
+
+  transition: left .6s ease-out;
+
+}
+
+
+
+/* Major fixes 
+
+//-----------------------------*/
+
+
+
+body.has-floating-sidebar.logged-in .float-sidebar-container h4 {
+
+  margin-top: 20px !important;
+
+}
+
+
+
+body:not(.has-floating-sidebar) .cs-content {
+
+    width: 100%;
+
+}
+
+
+
+body:not(.has-floating-sidebar)  .x-root{
+
+  flex-flow: row wrap;
+
+}
+
+
+
+body:not(.has-floating-sidebar)  #top,.x-colophon{
+
+  width:100% !important;
+
+}
+
+
+
+body:not(.has-floating-sidebar) .x-section .x-container.marginless-columns>.x-column{
+
+  display: inline-block;
+
+}
+
+
+
+@media only screen and (max-width: 616px) {
+
+  body:not(.has-floating-sidebar) .cs-content .x-container ul{
+
+    font-size: 13px;
+
+    margin-left: 10px;
+
+  } 
+
+
+
+  body:not(.has-floating-sidebar) .cs-content .x-container ul li{
+
+    -ms-word-break: break-all;
+
+    word-break: break-all;
+
+    word-break: break-word;
+
+    -webkit-hyphens: auto;
+
+    -moz-hyphens: auto;
+
+     hyphens: auto;
+
+  }
+
+}
+
+/* Fixing IE sidebare */
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+     /* IE10+ CSS styles go here */
+
+  .float-sidebar-container{
+
+    flex-basis: 22%;
+
+  }
+  
+  body.has-floating-sidebar #cs-content{
+
+     flex-basis: 72%;
+     
+  }
+
+}
