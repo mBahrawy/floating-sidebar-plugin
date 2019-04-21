@@ -177,25 +177,25 @@ body.has-floating-sidebar #cs-content h3 {
 
   font-size: 16px;
 
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f36b24+1,ff975e+100 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d2d2d2+1,ff975e+100 */
 
-  background: #f36b24;
+  background: #d2d2d2;
 
   /* Old browsers */
 
-  background: -moz-linear-gradient(45deg, #f36b24 1%, #ffb186 100%);
+  background: -moz-linear-gradient(45deg, #d2d2d2 1%, #f8f8f8 100%);
 
   /* FF3.6-15 */
 
-  background: -webkit-linear-gradient(45deg, #f36b24 1%, #ffb186 100%);
+  background: -webkit-linear-gradient(45deg, #d2d2d2 1%, #f8f8f8 100%);
 
   /* Chrome10-25,Safari5.1-6 */
 
-  background: linear-gradient(45deg, #f36b24 1%, #ffb186 100%);
+  background: linear-gradient(45deg, #d2d2d2 1%, #f8f8f8 100%);
 
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
-  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr= '#f36b24', endColorstr='#ffb186', GradientType=1);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr= '#d2d2d2', endColorstr='#f8f8f8', GradientType=1);
 
   /* IE6-9 fallback on horizontal gradient */
 
@@ -229,7 +229,7 @@ body.has-floating-sidebar #cs-content h3 {
 
   padding: 2px 2px 1px 0;
 
-  color: #cacaca;
+  color: #000000;
 
 }
 
@@ -237,7 +237,7 @@ body.has-floating-sidebar #cs-content h3 {
 
 .float-sidebar-container #float-sidebar ul li:not(:last-child) {
 
-  border-bottom: solid 1px #e8e8e8;
+  border-bottom: solid 1px #D2D2D2;
 
 }
 
@@ -279,7 +279,7 @@ body.has-floating-sidebar #cs-content h3 {
 
 #float-sidebar li.active a {
 
-  color: #b94200 !important;
+  color: #ec671B !important;
 
   left: 10px;
 
@@ -309,7 +309,7 @@ body.has-floating-sidebar #cs-content h3 {
 
 #float-sidebar li.active {
 
-  background-color: rgba(255, 235, 249, 0.48) !important;
+  background-color: #ffffff !important;
 
 }
 
@@ -842,7 +842,7 @@ body:not(.has-floating-sidebar) .x-section .x-container.marginless-columns>.x-co
 }
 
 /* Fixing horizontal scrolling on comments section */
-
+/*
 @media (max-width: 480px){
   .x-comment-content-wrap {
           width: 94% !important;
@@ -851,4 +851,4 @@ body:not(.has-floating-sidebar) .x-section .x-container.marginless-columns>.x-co
   }
   body.has-floating-sidebar {
       overflow-x: hidden !important;
-  }
+  }*/
