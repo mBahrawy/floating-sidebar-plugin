@@ -549,7 +549,7 @@ body.has-floating-sidebar.logged-in #float-sidebar {
 
     top: 63px;
 
-    left: -350px;
+    left: -450px;
 
     background-color: #fff;
 
@@ -731,15 +731,15 @@ body.has-floating-sidebar.logged-in #float-sidebar {
 
 .x-breadcrumb-wrap {
 
-  -webkit-transition: left .6s ease-out;
+  -webkit-transition: left .6s cubic-bezier(0.23, 0.55, 0.63, 0.99);
 
-  -moz-transition: left .6s ease-out;
+  -moz-transition: left .6s cubic-bezier(0.23, 0.55, 0.63, 0.99);
 
-  -ms-transition: left .6s ease-out;
+  -ms-transition: left .6s cubic-bezier(0.23, 0.55, 0.63, 0.99);
 
-  -o-transition: left .6s ease-out;
+  -o-transition: left .6s cubic-bezier(0.23, 0.55, 0.63, 0.99);
 
-  transition: left .6s ease-out;
+  transition: left .6s cubic-bezier(0.23, 0.55, 0.63, 0.99);
 
 }
 
@@ -842,13 +842,14 @@ body:not(.has-floating-sidebar) .x-section .x-container.marginless-columns>.x-co
 }
 
 /* Fixing horizontal scrolling on comments section */
-/*
+
 @media (max-width: 480px){
+
   .x-comment-content-wrap {
+
           width: 94% !important;
-          margin: 0 4%;
+
+          margin: 0 2%;
     }
+
   }
-  body.has-floating-sidebar {
-      overflow-x: hidden !important;
-  }*/
